@@ -16,3 +16,16 @@
 
 # Educative — paywall + bot detection
 ^https://www\.educative\.io/.*
+
+# Local dev URL referenced in README
+^http://127\.0\.0\.1:8000.*
+
+# Our own GitHub Pages URL (chicken-and-egg: site only exists after deploy passes)
+^https://harshmehta9000\.github\.io/.*
+
+# Hosts with aggressive bot detection
+^https://wellfound\.com/.*
+^https://theorg\.com/.*
+
+# README badge relative paths — lychee mistakes them for local files
+^file:///home/runner/.*
