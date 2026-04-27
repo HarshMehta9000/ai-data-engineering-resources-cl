@@ -1,0 +1,79 @@
+site_name: AI & Data Engineering Resources
+site_description: A curated knowledge base for AI engineers, ML practitioners, and data engineers.
+site_url: https://HarshMehta9000.github.io/ai-data-engineering-resources-cl/
+repo_url: https://github.com/HarshMehta9000/ai-data-engineering-resources-cl
+repo_name: ai-data-engineering-resources
+edit_uri: edit/main/docs/
+
+# Use docs/ as the documentation root. The docs/ folder contains symlinks
+# (or, on push, generated copies) to the canonical files at the repo root
+# and resources/, keeping a single source of truth.
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Interview Prep: interview-prep.md
+  - System Design: system-design.md
+  - LLMs & AI/ML: llms-and-ai.md
+  - Agents & MCP: agents-and-mcp.md
+  - Data Engineering: data-engineering.md
+  - MLOps & Deployment: mlops.md
+  - GPU & Low-Level: gpu-lowlevel.md
+  - Automation: automation.md
+  - Developer Tools: dev-tools.md
+  - GitHub Repos: github-repos.md
+  - Projects: projects.md
+  - Portfolio Inspiration: portfolio-inspiration.md
+  - Blogs & Writers: blogs.md
+  - Hardware & Audio: hardware-and-audio.md
+  - Job Search: job-search.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HarshMehta9000

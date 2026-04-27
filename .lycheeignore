@@ -1,0 +1,18 @@
+# Hosts that frequently rate-limit or require auth — known false positives.
+# Add patterns sparingly; prefer fixing/removing dead links over ignoring them.
+
+# X/Twitter — aggressive bot blocking
+^https://(x|twitter)\.com/.*
+
+# LinkedIn — auth wall
+^https://(www\.)?linkedin\.com/.*
+
+# Medium — sometimes 403s on automated checks
+^https://medium\.com/.*
+^https://[^/]+\.medium\.com/.*
+
+# LeetCode — rate-limits aggressively
+^https://leetcode\.com/.*
+
+# Educative — paywall + bot detection
+^https://www\.educative\.io/.*

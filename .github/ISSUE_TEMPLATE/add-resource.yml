@@ -1,0 +1,62 @@
+name: Add a Resource
+description: Suggest a new link to add to the knowledge base
+title: "[Resource] "
+labels: ["resource-suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      placeholder: e.g. "Modal"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Best-fit topic
+      options:
+        - Interview Prep
+        - System Design
+        - LLMs & AI/ML
+        - Agents & MCP
+        - Data Engineering
+        - MLOps & Deployment
+        - GPU & Low-Level ML
+        - Automation
+        - Developer Tools
+        - GitHub Repos
+        - Projects
+        - Portfolio Inspiration
+        - Blogs & Writers
+        - Hardware & Audio
+        - Job Search
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this worth adding?
+      description: One or two sentences. When would someone reach for this resource over alternatives?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the repo and this resource isn't already listed.
+          required: true
+        - label: This isn't self-promotion of low-effort content.
+          required: true

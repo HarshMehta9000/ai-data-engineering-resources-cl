@@ -1,0 +1,39 @@
+name: Report a Broken or Stale Link
+description: A link is dead, has moved, or points to abandoned content
+title: "[Broken] "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link URL
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: Which file is it in?
+      placeholder: resources/llms-and-ai.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: What's wrong?
+      options:
+        - 404 / page gone
+        - Domain expired or for sale
+        - Project abandoned (page loads but content is stale)
+        - Moved to a new URL
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Replacement (if any)
+      description: New URL, alternative resource, or "remove without replacement".
