@@ -1,31 +1,28 @@
 # Hosts that frequently rate-limit or require auth — known false positives.
 # Add patterns sparingly; prefer fixing/removing dead links over ignoring them.
-
 # X/Twitter — aggressive bot blocking
 ^https://(x|twitter)\.com/.*
-
 # LinkedIn — auth wall
 ^https://(www\.)?linkedin\.com/.*
-
 # Medium — sometimes 403s on automated checks
 ^https://medium\.com/.*
 ^https://[^/]+\.medium\.com/.*
-
 # LeetCode — rate-limits aggressively
 ^https://leetcode\.com/.*
-
 # Educative — paywall + bot detection
 ^https://www\.educative\.io/.*
-
 # Local dev URL referenced in README
 ^http://127\.0\.0\.1:8000.*
-
 # Our own GitHub Pages URL (chicken-and-egg: site only exists after deploy passes)
 ^https://harshmehta9000\.github\.io/.*
-
 # Hosts with aggressive bot detection
 ^https://wellfound\.com/.*
 ^https://theorg\.com/.*
-
 # README badge relative paths — lychee mistakes them for local files
 ^file:///home/runner/.*
+# Sites with cert/availability issues — kept as links for users
+^https://songblock\.ai/.*
+^https://www\.musicarena\.ai/.*
+^https://www\.withdiode\.com/.*
+^https://adithyask\.com/.*
+^https://netflixtechblog\.com/.*
